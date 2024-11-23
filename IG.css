@@ -1,0 +1,19 @@
+body {
+    background-color: #fce4ec;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+th, td {
+    border: #c4b5a6 solid 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #f8bbd0;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
