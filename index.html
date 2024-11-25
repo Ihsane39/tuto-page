@@ -4,19 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Mini-Projet</title>
+    <!-- Intégration de Bulma -->
     <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    <style>
+        /* Style pour les puces losanges */
+        ul.losange {
+            list-style-type: none;
+            padding-left: 1em;
+        }
+        ul.losange li::before {
+            content: "◆";
+            color: #3273dc; /* Couleur des losanges, assortie au thème Bulma */
+            margin-right: 0.5em;
+        }
+    </style>
 </head>
 <body>
+    <!-- En-tête avec présentation -->
     <section class="hero is-primary">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">Mini-Projet</h1>
-                <p class="subtitle">Bienvenue dans mon mini-projet de présentation de données en HTML.</p>
-                <a href="tableau-fr.html" class="button is-link">Voir le tableau de résultats</a>
+                <h1 class="title">Mini-Projet HTML</h1>
+                <p class="subtitle">Ce mini-projet, conçu comme une introduction au projet collectif, a pour objectif de fournir des informations sur le contenu extrait d'une série d'URLs.</p>
+                <p>Un tableau est mis à votre disposition pour visualiser les données collectées. Il contient les éléments suivants :</p>
+                <ul class="losange">
+                    <li>L'URL concernée</li>
+                    <li>Le code HTTP de la requête</li>
+                    <li>L'encodage utilisé</li>
+                    <li>Le nombre de mots détectés</li>
+                </ul>
+                <a href="tableau-fr.html" class="button is-link">Voir le tableau des résultats</a>
             </div>
         </div>
     </section>
 </body>
 </html>
-
 
